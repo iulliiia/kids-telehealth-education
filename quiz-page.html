@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Ouiz game</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./style-quiz.css" />
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jersey+15&family=Seymour+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jersey+15&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Seymour+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body style="height: 100vh; display: grid; grid-template-rows: auto 1fr">
+    <header>
+      <div class="header-login-bg">
+        <div class="header-login">
+          <div>
+            <img class="logo" src="./images/logo.png" />
+          </div>
+          <div class="login-buttons">
+            <button><a href="./login.html">Log in</a></button>
+            <button>Sign in</button>
+          </div>
+        </div>
+      </div>
+      <div class="meniu-navigare-bg">
+        <div class="meniu-navigare">
+          <div class="link-box">
+            <a href="./index.html">Your body</a>
+          </div>
+          <div class="link-box" id="explore-the-body-button">
+            <a href="">Explore the body</a>
+            <div class="submenu" id="explore-the-body">
+              <a href="">How the body works</a>
+              <a href="">Dictionary</a>
+              <a href="">Health problems</a>
+              <a href="">Puberty & Growing up</a>
+            </div>
+          </div>
+          <div class="link-box" id="keep-healthy-button">
+            <a href="">Keep healthy</a>
+            <div class="submenu" id="keep-healthy">
+              <a href="">Healthy body, healthy mind</a>
+              <a href="">Staying safe</a>
+              <a href="">Feelings</a>
+            </div>
+          </div>
+          <div class="link-box" id="games-button">
+            <a href="">Games</a>
+            <div class="submenu" id="games">
+              <a href="">Take your time to relax</a>
+              <a href="">Exercise is fun</a>
+              <a href="./quiz-page.html">Quizz time</a>
+            </div>
+          </div>
+          <div class="search-box">
+            <input type="text" placeholder="Search..." />
+          </div>
+        </div>
+      </div>
+    </header>
+    <main style="overflow: hidden">
+      <div class="quiz-bg">
+        <div class="quiz-container">
+          <div class="question-title" id="question-title"></div>
+          <div class="question-answers-container">
+            <div class="answer-box" id="answer-0"></div>
+            <div class="answer-box" id="answer-1"></div>
+            <div class="answer-box" id="answer-2"></div>
+            <div class="answer-box" id="answer-3"></div>
+          </div>
+          <div class="quiz-details">
+            <div>
+              <p>15:00</p>
+            </div>
+            <div>
+              <p>
+                <span id="current-question"></span>/<span
+                  id="num-questions"
+                ></span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="quiz-script.js"></script>
+  </body>
+</html>

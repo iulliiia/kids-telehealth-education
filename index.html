@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Your body</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jersey+15&family=Seymour+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jersey+15&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Seymour+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body style="height: 100vh; display: grid; grid-template-rows: auto 1fr">
+    <header>
+      <div class="header-login-bg">
+        <div class="header-login">
+          <div>
+            <img class="logo" src="./images/logo.png" />
+          </div>
+          <div class="login-buttons">
+            <button><a href="./login.html">Log in</a></button>
+            <button><a href="./register.html">Sign in</a></button>
+          </div>
+        </div>
+      </div>
+      <div class="meniu-navigare-bg">
+        <div class="meniu-navigare">
+          <div class="link-box">
+            <a href="./index.html">Your body</a>
+          </div>
+          <div class="link-box" id="explore-the-body-button">
+            <a href="">Explore the body</a>
+            <div class="submenu" id="explore-the-body">
+              <a href="">How the body works</a>
+              <a href="">Dictionary</a>
+              <a href="">Health problems</a>
+              <a href="">Puberty & Growing up</a>
+            </div>
+          </div>
+          <div class="link-box" id="keep-healthy-button">
+            <a href="">Keep healthy</a>
+            <div class="submenu" id="keep-healthy">
+              <a href="">Healthy body, healthy mind</a>
+              <a href="">Staying safe</a>
+              <a href="">Feelings</a>
+            </div>
+          </div>
+          <div class="link-box" id="games-button">
+            <a href="">Games</a>
+            <div class="submenu" id="games">
+              <a href="">Take your time to relax</a>
+              <a href="">Exercise is fun</a>
+              <a href="./quiz-page.html">Quizz time</a>
+            </div>
+          </div>
+          <div class="search-box">
+            <input type="text" placeholder="Search..." />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="main-page">
+        <br /><br /><br />
+        <div>
+          <h2 class="titlu">
+            What is your body like?<br />
+            Personalize your profile and complete some facts about yourself!
+          </h2>
+        </div>
+        <br />
+        <div id="formular">
+          <br />
+
+          <form method="POST" action="main_page.php">
+            <br />
+            <div class="form-element">
+              Age:
+              <input
+                id="inputAge"
+                type="TEXT"
+                size="15"
+                maxlength="20"
+                name="age"
+              />
+            </div>
+
+            <br /><br />
+            <div class="form-element">
+              Height:
+              <input
+                id="inputHeight"
+                type="TEXT"
+                size="15"
+                maxlength="15"
+                name="height"
+              />
+            </div>
+
+            <br /><br />
+            <div class="form-element">
+              Weight:
+              <input
+                id="inputWeight"
+                type="TEXT"
+                size="15"
+                maxlength="15"
+                name="weight"
+              />
+            </div>
+
+            <br /><br />
+            <div id="div-submit">
+              <input id="buton-submit" type="SUBMIT" value="Submit" />
+            </div>
+            <br />
+          </form>
+        </div>
+        <br /><br />
+        <div>
+          <div class="butoane-main-bmi-water">
+            <div>
+              <button id="buton-bmi">Calculate your BMI</button><br /><br />
+              <div
+                class="container-calculator"
+                id="container-bmi"
+                style="display: none"
+              >
+                <p id="detalii-bmi">
+                  BMI stands for Body Mass Index. It's a measurement calculated
+                  using a person's weight and height. BMI helps to assess
+                  whether a person is underweight, normal weight, overweight, or
+                  obese, which can indicate potential health risks associated
+                  with weight. It is important to know so you can learn how to
+                  overcome any problems.
+                </p>
+                <p>Your BMI is : <span id="bmi-value"></span></p>
+              </div>
+              <div class="container-eroare" id="eroare-bmi">
+                Please fill in the form before! We need your height and weight
+                for BMI.
+              </div>
+            </div>
+            <div>
+              <button id="buton-water">
+                Calculate your necessary water intake</button
+              ><br /><br />
+              <div
+                class="container-calculator"
+                id="container-water"
+                style="display: none"
+              >
+                <p id="detalii-water"></p>
+                <p>
+                  Your water intake is : <span id="water-value"></span> liters
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>

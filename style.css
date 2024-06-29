@@ -1,0 +1,269 @@
+body {
+  background-image: url("./images/4.jpg");
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  margin: 0;
+  font-family: "Montserrat";
+}
+
+.logo {
+  width: 200px;
+  height: auto;
+}
+.header-login-bg {
+  background-color: #3f42529d;
+  height: 6rem;
+}
+
+.header-login {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  height: 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.login-buttons {
+  width: 15rem;
+  display: flex;
+  justify-content: space-between;
+  border-width: 5px;
+}
+
+.login-buttons > button {
+  background-color: rgba(255, 255, 255, 0.789);
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+  border-radius: 20px;
+  font-family: "Seymour One", sans-serif;
+  font-size: x-small;
+}
+
+.login-buttons a {
+  color: black;
+}
+
+.login-buttons a:visited {
+  color: black;
+}
+
+.login-buttons > button:hover {
+  border-color: #e7bbdb;
+  cursor: pointer;
+}
+.logo {
+  font-size: x-large;
+}
+
+.meniu-navigare-bg {
+  background-color: #161a30;
+}
+
+.meniu-navigare {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 4rem;
+}
+
+.link-box {
+  height: 80%;
+  width: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1c213d;
+  text-transform: uppercase;
+  border-radius: 20px;
+  box-sizing: border-box;
+  box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.198);
+}
+
+.link-box:hover {
+  height: 100%;
+  border-radius: 20px;
+  background-color: #0f1120;
+  position: relative;
+}
+
+.submenu {
+  top: 63.99px;
+  display: none;
+  position: absolute;
+  z-index: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  box-sizing: border-box;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.424);
+  width: 15rem;
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+}
+
+.submenu a {
+  color: whitesmoke;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-transform: uppercase;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+.submenu a:hover {
+  background-color: #1c1f308a;
+}
+#explore-the-body-button:hover #explore-the-body {
+  display: flex;
+}
+#keep-healthy-button:hover #keep-healthy {
+  display: flex;
+}
+#games-button:hover #games {
+  display: flex;
+}
+
+a:link {
+  text-decoration: none;
+  color: white;
+}
+
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+input[type="text"] {
+  border: none;
+  padding: 1rem;
+  border-radius: 20px;
+  width: 15rem;
+  background-color: rgba(220, 228, 231, 0.418);
+}
+
+.main-page {
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+
+.titlu {
+  color: rgba(255, 255, 255, 0.783);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
+  margin-top: 0;
+  text-align: center;
+}
+
+#formular {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  backdrop-filter: blur(20px);
+  width: 66%;
+  margin-left: 18%;
+  border-radius: 25px;
+  box-sizing: border-box;
+  box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.198);
+}
+.form-element {
+  width: 26rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: large;
+  color: whitesmoke;
+}
+.butoane-main-bmi-water {
+  display: flex;
+  justify-content: space-around;
+  border-width: 5px;
+}
+.butoane-main-bmi-water button {
+  background-color: white;
+  width: 30rem;
+  color: rgb(41, 41, 41);
+  padding: 10px 26px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+  border-radius: 20px;
+  font-family: "Seymour One", sans-serif;
+  font-size: small;
+}
+
+.butoane-main-bmi-water button:hover {
+  background-color: #0f1120e1;
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+.container-calculator {
+  background-color: #ffffffa4;
+  padding: 5px;
+  border-radius: 20px;
+  border-width: 10px;
+  border: solid #a3a3a3;
+  width: 28rem;
+  font-family: "Montserrat";
+  color: #161a30;
+  font-weight: bolder;
+  text-align: center;
+}
+
+#buton-submit {
+  width: 7rem;
+  display: flex;
+  justify-content: space-between;
+  border-width: 2px;
+  background-color: whitesmoke;
+  color: black;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 20px;
+  font-family: "Seymour One", sans-serif;
+  font-size: small;
+}
+
+#buton-submit:hover {
+  background-color: rgba(64, 200, 64, 0.702);
+  color: white;
+  border-color: rgb(1, 33, 1);
+  cursor: pointer;
+}
+
+#div-submit {
+  display: flex;
+  justify-content: right;
+}
+
+.container-eroare {
+  background-color: rgba(249, 27, 27, 0.519);
+  padding: 1rem;
+  border-radius: 20px;
+  border-width: 10px;
+  border: solid #640808;
+  width: 28rem;
+  font-family: "Montserrat";
+  color: #ffffff;
+  text-align: center;
+}
+
+#eroare-bmi {
+  display: none;
+}
